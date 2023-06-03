@@ -5,7 +5,7 @@ const NotFound = () => {
     <>
       <NavBar />
       <div className="not-found">
-        <img src="src/assets/404.jpg" alt="page not found" />
+        <img src="src/assets/404.webp" alt="page not found" />
         <p>ไม่พบหน้าที่คุณค้นหา</p>
       </div>
     </>

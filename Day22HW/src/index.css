@@ -53,3 +53,10 @@
 .not-found p {
   font-size: 70px;
 }
+
+.product-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
+  margin: 0 8% 0 8%;
+}

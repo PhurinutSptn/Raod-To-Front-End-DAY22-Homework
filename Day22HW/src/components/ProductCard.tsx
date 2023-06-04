@@ -4,22 +4,29 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 
-const ProductCard = () => {
+type productDesc = {
+  image: string,
+  alter: string,
+  prod_name: string,
+  children: React.ReactNode
+}
+
+const ProductCard = ({image, alter, prod_name, children}:productDesc) => {
   return (
     <Card sx={{ maxWidth: 400 }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="250"
-          image="src/assets/Edifier WH950NB.webp"
-          alt="Headphones Edifier WH950NB"
+          image={image}
+          alt={alter}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Edifier WH950NB
+            {prod_name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            หูฟังจากทาง Edifier ในรุ่น WH9500NB เป็นหูฟังไร้สายที่ออกแบบมาให้มีน้ำหนักเบา สวมใส่สบาย สามารถใช้งานได้อย่างหลากหลาย
+            {children}
           </Typography>
         </CardContent>
       </CardActionArea>

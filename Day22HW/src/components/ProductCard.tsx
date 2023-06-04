@@ -6,11 +6,11 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 
 const ProductCard = () => {
   return (
-    <Card sx={{ maxWidth: 300 }}>
+    <Card sx={{ maxWidth: 400 }}>
       <CardActionArea>
         <CardMedia
           component="img"
-          height="200"
+          height="250"
           image="src/assets/Edifier WH950NB.webp"
           alt="Headphones Edifier WH950NB"
         />
@@ -19,14 +19,17 @@ const ProductCard = () => {
             Edifier WH950NB
           </Typography>
           <Typography variant="body2" color="text.secondary">
-          หูฟังจากทาง Edifier ในรุ่น WH9500NB เป็นหูฟังไร้สายที่ออกแบบมาให้มีน้ำหนักเบา สวมใส่สบาย สามารถใช้งานได้อย่างหลากหลาย
+            หูฟังจากทาง Edifier ในรุ่น WH9500NB เป็นหูฟังไร้สายที่ออกแบบมาให้มีน้ำหนักเบา สวมใส่สบาย สามารถใช้งานได้อย่างหลากหลาย
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary" href='#/checkout'>
-          Checkout
-        </Button>
+        <div className='d-flex justify-content-between'>
+          <Button size="small" color="primary" href='#/checkout'>
+            Checkout
+          </Button>
+          <p className='view'>8 views</p>
+        </div>
       </CardActions>
     </Card>
   )

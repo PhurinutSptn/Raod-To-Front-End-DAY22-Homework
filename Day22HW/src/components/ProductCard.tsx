@@ -14,7 +14,7 @@ type productDesc = {
 const ProductCard = ({image, alter, prod_name, children}:productDesc) => {
   return (
     <Card sx={{ maxWidth: 400 }}>
-      <CardActionArea>
+      <CardActionArea href='#/product_desc'>
         <CardMedia
           component="img"
           height="250"

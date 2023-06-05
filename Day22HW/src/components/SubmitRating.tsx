@@ -27,7 +27,7 @@ const SubmitRating = () => {
   return (
     <>
         <table>
-            <tr>
+            <tr className='table-header'>
                 <th>
                     Rate this Product
                 </th>

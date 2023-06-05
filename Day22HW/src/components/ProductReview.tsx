@@ -3,7 +3,7 @@ const ProductReview = () => {
   return (
     <>
         <table>
-            <tr>
+            <tr className="table-header">
                 <th>
                     Reviews
                 </th>

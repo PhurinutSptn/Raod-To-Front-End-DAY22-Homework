@@ -3,7 +3,7 @@ const ProductSpec = () => {
   return (
     <>
       <table className="product-spec">
-        <tr>
+        <tr className="table-header">
           <th>Specifications</th>
         </tr>
         <tr>

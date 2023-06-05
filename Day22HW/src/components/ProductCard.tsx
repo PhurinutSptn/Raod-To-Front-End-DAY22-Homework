@@ -8,10 +8,11 @@ type productDesc = {
   image: string,
   alter: string,
   prod_name: string,
+  price: string,
   children: React.ReactNode
 }
 
-const ProductCard = ({image, alter, prod_name, children}:productDesc) => {
+const ProductCard = ({image, alter, prod_name, price, children}:productDesc) => {
   return (
     <Card sx={{ maxWidth: 400 }}>
       <CardActionArea href='#/product_desc'>
@@ -35,7 +36,7 @@ const ProductCard = ({image, alter, prod_name, children}:productDesc) => {
           <Button size="small" color="primary" href='#/checkout'>
             Checkout
           </Button>
-          <p className='view'>8 views</p>
+          <p className='price'>{price}</p>
         </div>
       </CardActions>
     </Card>

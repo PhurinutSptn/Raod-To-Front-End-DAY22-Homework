@@ -130,6 +130,43 @@
   width: 100%;
 }
 
+.checkout-header {
+  text-align: center;
+  padding: 1rem;
+}
+
+.checkout-header p {
+  padding: .5rem ;
+}
+
+.checkout-form {
+  width: 100%;
+}
+
+.checkout-l {
+  width: 60%;
+}
+
+.name {
+  width: 48%;
+}
+
+.form-items {
+  padding-top: .5rem;
+}
+
+.country {
+  width: 38%;
+}
+
+.state {
+  width: 30%;
+}
+
+.zip {
+  width: 25%;
+}
+
 table {
   border-collapse: collapse;
   border-radius: 10px;

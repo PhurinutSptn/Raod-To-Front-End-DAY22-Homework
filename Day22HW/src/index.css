@@ -85,6 +85,10 @@
   align-items: center;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 .price {
   padding: 5px;
 }
@@ -141,13 +145,18 @@
 
 .checkout-form {
   width: 100%;
+  margin-bottom: 2rem;
 }
 
 .checkout-l {
-  width: 60%;
+  width: 58%;
 }
 
-.name {
+.checkout-r {
+  width: 40%;
+}
+
+.name, .holderName, .cardNumber {
   width: 48%;
 }
 
@@ -167,11 +176,22 @@
   width: 25%;
 }
 
+.cart-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem;
+}
+
 table {
   border-collapse: collapse;
   border-radius: 10px;
   width: 100%;
   margin: 1rem 0 1rem 0;
+}
+
+tr {
+  border: 1px solid #ddd;
 }
 
 td,th {
@@ -185,7 +205,11 @@ hr {
   margin: 0.5rem 0 0.5rem 0;
 }
 
-tr:nth-child(1){
+.promo-code {
+  color: green;
+}
+
+.table-header {
   background-color: #f8f8f8;
 }
 
